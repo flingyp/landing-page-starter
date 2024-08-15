@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 
+import Header from "@/components/Header/Header";
+
 const inter = Inter({
   subsets: [
     "cyrillic",
@@ -29,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={inter.variable} suppressHydrationWarning={true}>
+        <Header />
         {children}
       </body>
     </html>

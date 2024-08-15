@@ -1,4 +1,5 @@
 import { getLocale, LocalKey } from "@/lib/locales";
+import SwitchLanguage from "@/components/SwitchLanguage";
 
 interface PageProps {
   params: {
@@ -12,9 +13,11 @@ export default async function Page(props: PageProps) {
   const localeDict = await getLocale(lang);
 
   return (
-    <main>
+    <main className="mt-[80px]">
       <p>{localeDict["Lading Page Starter"]}</p>
       <p>{localeDict["description"]}</p>
+
+      <SwitchLanguage />
     </main>
   );
 }
