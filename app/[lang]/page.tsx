@@ -4,11 +4,10 @@ interface PageProps {
   params: {
     lang: string;
   };
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export default async function Page(props: PageProps) {
-  console.log("props:", props);
   const lang = props.params.lang as LocalKey;
   const localeDict = await getLocale(lang);
 
