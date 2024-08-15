@@ -33,11 +33,14 @@ export default function SwitchLanguage() {
 
   const router = useRouter();
   const handleChangeLanguage = (value: string) => {
-    router.replace(`/${value}`);
+    router.push(`/${value}`);
   };
 
   return (
-    <Select onValueChange={(value) => handleChangeLanguage(value)}>
+    <Select
+      defaultValue={curLanguageItem.value}
+      onValueChange={(value) => handleChangeLanguage(value)}
+    >
       <SelectTrigger className="w-28">
         <SelectValue placeholder={curLanguageItem.label} />
       </SelectTrigger>

@@ -1,5 +1,6 @@
 import { getLocale, LocalKey } from "@/lib/locales";
 import SwitchLanguage from "@/components/SwitchLanguage";
+import SwitchTheme from "@/components/SwitchTheme";
 
 interface PageProps {
   params: {
@@ -18,6 +19,7 @@ export default async function Page(props: PageProps) {
       <p>{localeDict["description"]}</p>
 
       <SwitchLanguage />
+      <SwitchTheme />
     </main>
   );
 }

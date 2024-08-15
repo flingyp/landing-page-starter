@@ -8,8 +8,8 @@
 - [x] 集成国际化
   - [参考官方教程](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
   - 默认使用浏览器语言，匹配不到则会使用系统设置好的默认语言
-- [ ] 集成图标库
-- [ ] 暗黑模式
+- [x] 集成图标库（集成 react-icons 图标库）
+- [x] 暗黑模式
 - [ ] 提供填写表单功能
 - [ ] 推送邮件功能
 - [ ] 自定义域名
