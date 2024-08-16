@@ -2,6 +2,7 @@ import { getLocale, LocalKey } from "@/lib/locales";
 
 import Hero from "@/components/Home/Hero";
 import Brand from "@/components/Home/Brand";
+import Feature from "@/components/Home/Feature";
 
 interface PageProps {
   params: {
@@ -21,6 +22,7 @@ export default async function Page(props: PageProps) {
     <>
       <Hero />
       <Brand />
+      <Feature />
     </>
   );
 }
